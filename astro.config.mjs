@@ -29,7 +29,7 @@ const whenExternalScripts = (items = []) =>
     : [];
 
 export default defineConfig({
-  site: "https://teamuroflo.github.io",
+  site: "https://uroflo.io",
   base: "/",
   trailingSlash: SITE.trailingSlash ? "always" : "never",
 
