@@ -1,0 +1,298 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Header from '~/components/widgets/Header.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+const metadata = {
+  title: 'UroFlo',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <Fragment slot="header">
+    <Header
+      position="right"
+      links={[
+        { text: 'Mission', href: '#mission' },
+        { text: 'Advantages', href: '#advantages' },
+        { text: 'Features', href: '#features' },
+        { text: 'About', href: '#about' },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Learn more',
+        href: '#advantages',
+        icon: 'tabler:arrow-right',
+      },
+    ]}
+    image={{ src: '~/assets/images/uroflo_blue_full.svg', alt: 'UroFlo Logo', class: 'w-4' }}
+  >
+    <Fragment slot="title">
+      Advancing continuous bladder irrigation. Revolutionizing <span class="text-accent">urological</span> care.
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      We are <span class="font-bold">UroFlo</span>.
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    id="mission"
+    title="Our mission"
+    subtitle="We are a medical device company focused on developing innovative solutions for urological care. Our flagship product, UroFlo, is an automated, intuitive, and comprehensive continuous bladder irrigation system."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Stats Widget ****************** -->
+
+  <!--Stats
+    title="Discover the impact of UroFlo"
+    subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
+    stats={[
+      { title: 'Downloads', amount: '200K' },
+      { title: 'Websites Launched', amount: '87' },
+      { title: 'User Ratings', amount: '4.8' },
+      { title: 'Satisfied Clients', amount: '116K' },
+    ]}
+  /-->
+
+  <!-- Brands Widget ****************** -->
+
+  <Brands
+    title="Partnerships & Collaborations"
+    subtitle="Backed by board-certified urologists and surgeons at leading healthcare institutions."
+    icons={[]}
+    images={[
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/en/9/9e/Texas_Children%27s_Hospital_logo.svg',
+        alt: "Texas Children's Hospital",
+      },
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Baylor_College_of_Medicine_Logo.png',
+        alt: 'Baylor College of Medicine',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    id="advantages"
+    title="Why choose UroFlo?"
+    subtitle="Our system is designed to provide a seamless and efficient experience for both patients and healthcare providers."
+    items={[
+      {
+        title: '24/7 Patient Monitoring',
+        description:
+          'Real-time patient monitoring with built in notification system, ensuring optimal performance and timely intervention in case of issues.',
+        icon: 'tabler:clock-24',
+      },
+      {
+        title: 'Fully Automated.',
+        description:
+          'State of the art AI and automation technologies, taking the guesswork out of CBI and reducing the need for manual intervention.',
+        icon: 'tabler:automatic-gearbox',
+      },
+      {
+        title: 'Remotely Accessible',
+        description: 'Securely access the system from any device connected to the internet.',
+        icon: 'tabler:access-point',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="Main features"
+    subtitle=""
+    columns={3}
+    items={[
+      {
+        title: 'Blood Concentration Measurement.',
+        description: 'Measures the concentration of blood in the urine.',
+        icon: 'tabler:droplet-half-2-filled',
+      },
+      {
+        title: 'Inflow-Rate Measurement',
+        description: 'Measures inflow and outflow rates, monitoring for any discrepancies.',
+        icon: 'tabler:ripple',
+      },
+      {
+        title: 'Inflow Rate Control',
+        description: 'Manual mode for adjusting inflow rate as needed.',
+        icon: 'tabler:adjustments',
+      },
+      {
+        title: 'Notification System',
+        description: 'Built-in notification system with lights, alarms, and SMS text alerts.',
+        icon: 'tabler:bell-ringing',
+      },
+      {
+        title: 'User-Friendly Interface',
+        description:
+          'Fully custom interface with touch screen controls, making it easy to use for both patients and healthcare providers.',
+        icon: 'tabler:hand-click',
+      },
+    ]}
+  />
+
+  <Content
+    id="about"
+    columns={3}
+    items={[
+      {
+        icon: 'tabler:user',
+        callToAction: {
+          text: 'Richard Chan',
+        },
+      },
+      {
+        icon: 'tabler:user',
+        callToAction: {
+          text: 'Kevin Li',
+        },
+      },
+      {
+        icon: 'tabler:user',
+        callToAction: {
+          text: 'Anushka Agrawal',
+        },
+      },
+      {
+        icon: 'tabler:user',
+        callToAction: {
+          text: 'Sahana Prasanna',
+        },
+      },
+      {
+        icon: 'tabler:user',
+        callToAction: {
+          text: 'Archit Chabbi',
+        },
+      },
+      {
+        icon: 'tabler:user',
+        callToAction: {
+          text: 'Robert Heeter',
+        },
+      },
+    ]}
+    image={{
+      src: '~/assets/images/team.jpg',
+      alt: 'Team Photo',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About us</h2>
+      <p>We are a team of six passionate bioengineering students from Rice University.</p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- FAQs Widget ******************* -->
+
+  <!--FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'What are landing page templates?',
+        description:
+          'Landing page templates are pre-designed web page layouts that are specifically created to serve as a foundation for building effective landing pages. These templates are designed to capture the attention of visitors and guide them towards a specific action or goal, such as signing up for a newsletter, making a purchase, or downloading a resource.',
+      },
+      {
+        title: 'Why should I use a template?',
+        description:
+          'Some of the advantages are that they provide a ready-to-use structure,  saving you significant time. Are designed with user-friendliness in mind and provide a cost-effective alternative, saving you money while still delivering a quality result.',
+      },
+      {
+        title: 'Can I preview templates before buying?',
+        description:
+          'Yes, the templates allow you to preview them before making a purchase. There is a "Demo" button associated with each template.',
+      },
+      {
+        title: 'Do I need technical skills to use a template?',
+        description:
+          'Advanced technical skills are not required to use a template, but having a basic understanding of web navigation and familiarity with using online tools can still be beneficial. If you have more specific customization needs, you might need to consult guides or reach out to customer support for assistance.',
+      },
+      {
+        title: 'Can I use the template on multiple websites?',
+        description:
+          'No, the template comes with a single-use license, meaning you can use the template on one website or project only. Using the template on additional websites would require purchasing additional licenses.',
+      },
+      {
+        title: 'What if I need help with customization?',
+        description:
+          "The templates provides a comprehensive step-by-step guide that walk you through the customization process. If you still have doubts, you can reach out to our customer support team. They can answer your questions, provide guidance on customization, and address any issues you're facing.",
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs-->
+
+  <!-- Features3 Widget ************** -->
+
+  <!--Features3
+    title="Contact"
+    columns={1}
+    items={[
+      {
+        title: 'Email',
+        icon: 'tabler:mail',
+        callToAction: {
+          target: '_blank',
+          text: 'Write to us',
+          href: '/',
+          variant: 'link',
+        },
+      },
+    ]}
+  /-->
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Email',
+        href: 'mailto:autoirrigationteam@gmail.com',
+        icon: 'tabler:mail',
+      },
+    ]}
+  >
+    <Fragment slot="title">Contact us</Fragment>
+  </CallToAction>
+</Layout>
