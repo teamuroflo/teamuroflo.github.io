@@ -36,8 +36,8 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Learn more',
-        href: '#advantages',
-        icon: 'tabler:arrow-right',
+        href: '#mission',
+        icon: 'tabler:arrow-down',
       },
     ]}
     image={{ src: '~/assets/images/uroflo_blue_full.svg', alt: 'UroFlo Logo', class: 'w-4' }}
@@ -56,7 +56,7 @@ const metadata = {
   <Features2
     id="mission"
     title="Our mission"
-    subtitle="We are a medical device company focused on developing innovative solutions for urological care. Our flagship product, UroFlo, is an automated, intuitive, and comprehensive continuous bladder irrigation system."
+    subtitle=`We are a medical device company focused on developing innovative solutions for urological care. Our flagship product, <span class="font-bold">UroFlo</span>, is an automated, intuitive, and comprehensive continuous bladder irrigation system. Our mission is to reduce the burden on healthcare providers and improve patient outcomes by providing a reliable and efficient CBI solution.`
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -168,39 +168,27 @@ const metadata = {
     items={[
       {
         icon: 'tabler:user',
-        callToAction: {
-          text: 'Richard Chan',
-        },
+        title: 'Richard Chan'
       },
       {
         icon: 'tabler:user',
-        callToAction: {
-          text: 'Kevin Li',
-        },
+        title: 'Kevin Li'
       },
       {
         icon: 'tabler:user',
-        callToAction: {
-          text: 'Anushka Agrawal',
-        },
+        title: 'Anushka Agrawal'
       },
       {
         icon: 'tabler:user',
-        callToAction: {
-          text: 'Sahana Prasanna',
-        },
+        title: 'Sahana Prasanna'
       },
       {
         icon: 'tabler:user',
-        callToAction: {
-          text: 'Archit Chabbi',
-        },
+        title: 'Archit Chabbi'
       },
       {
         icon: 'tabler:user',
-        callToAction: {
-          text: 'Robert Heeter',
-        },
+        title: 'Robert Heeter'
       },
     ]}
     image={{
