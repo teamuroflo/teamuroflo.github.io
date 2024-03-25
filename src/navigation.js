@@ -104,6 +104,6 @@ export const headerData = {
 export const footerData = {
   socialLinks: [{ ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/teamuroflo/uroflo' }],
   footNote: `
-    © Copyright 2024 UroFlo at Rice University with Texas Children's Hospital and Baylor College of Medicine. All rights reserved. 
+    Copyright © 2024 UroFlo at Rice University with Texas Children's Hospital and Baylor College of Medicine. All rights reserved. 
   `,
 };
