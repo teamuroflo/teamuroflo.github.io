@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: UroFlo
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/uroflo_blue_full.svg'
         width: 1200
         height: 628
     type: website
