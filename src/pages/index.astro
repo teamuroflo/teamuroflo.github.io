@@ -1,18 +1,18 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Header from '~/components/widgets/Header.astro';
-import Content from '~/components/widgets/Content.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Features from '~/components/widgets/Features.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Brands from '~/components/widgets/Brands.astro';
+import Layout from "~/layouts/PageLayout.astro";
+import Hero from "~/components/widgets/Hero.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+import Header from "~/components/widgets/Header.astro";
+import Content from "~/components/widgets/Content.astro";
+import Features2 from "~/components/widgets/Features2.astro";
+import Features from "~/components/widgets/Features.astro";
+import Stats from "~/components/widgets/Stats.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import FAQs from "~/components/widgets/FAQs.astro";
+import Brands from "~/components/widgets/Brands.astro";
 
 const metadata = {
-  title: 'UroFlo',
+  title: "UroFlo",
 };
 ---
 
@@ -22,10 +22,10 @@ const metadata = {
     <Header
       position="right"
       links={[
-        { text: 'Mission', href: '#mission' },
-        { text: 'Advantages', href: '#advantages' },
-        { text: 'Features', href: '#features' },
-        { text: 'About', href: '#about' },
+        { text: "Mission", href: "#mission" },
+        { text: "Advantages", href: "#advantages" },
+        { text: "Features", href: "#features" },
+        { text: "About", href: "#about" },
       ]}
       isSticky
       showToggleTheme
@@ -34,23 +34,29 @@ const metadata = {
   <Hero
     actions={[
       {
-        variant: 'primary',
-        text: 'Learn more',
-        href: '#mission',
-        icon: 'tabler:arrow-down',
+        variant: "primary",
+        text: "Learn more",
+        href: "#mission",
+        icon: "tabler:arrow-down",
       },
       {
-        variant: 'secondary',
-        target: '_blank',
-        text: 'Demo',
-        href: 'https://demo.uroflo.io/',
-        icon: 'tabler:external-link',
+        variant: "secondary",
+        target: "_blank",
+        text: "Demo",
+        href: "https://demo.uroflo.io/",
+        icon: "tabler:external-link",
       },
     ]}
-    image={{ src: '~/assets/images/uroflo_blue_full.svg', alt: 'UroFlo Logo', class: 'w-4' }}
+    image={{
+      src: "~/assets/images/uroflo_blue_full.svg",
+      alt: "UroFlo Logo",
+      class: "w-4",
+    }}
   >
     <Fragment slot="title">
-      Advancing continuous bladder irrigation. Revolutionizing <span class="text-accent">urological</span> care.
+      Advancing continuous bladder irrigation. Transforming <span
+        class="text-accent">urological</span
+      > care.
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -91,12 +97,12 @@ const metadata = {
     icons={[]}
     images={[
       {
-        src: 'https://upload.wikimedia.org/wikipedia/en/9/9e/Texas_Children%27s_Hospital_logo.svg',
+        src: "https://upload.wikimedia.org/wikipedia/en/9/9e/Texas_Children%27s_Hospital_logo.svg",
         alt: "Texas Children's Hospital",
       },
       {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Baylor_College_of_Medicine_Logo.png',
-        alt: 'Baylor College of Medicine',
+        src: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Baylor_College_of_Medicine_Logo.png",
+        alt: "Baylor College of Medicine",
       },
     ]}
   />
@@ -109,21 +115,22 @@ const metadata = {
     subtitle="Our system is designed to provide a seamless and efficient experience for both patients and healthcare providers."
     items={[
       {
-        title: '24/7 Patient Monitoring',
+        title: "24/7 Patient Monitoring",
         description:
-          'Real-time patient monitoring with a built in notification system, ensuring optimal performance and timely intervention in case of issues.',
-        icon: 'tabler:clock-24',
+          "Real-time patient monitoring with a built in notification system, ensuring optimal performance and timely intervention in case of issues.",
+        icon: "tabler:clock-24",
       },
       {
-        title: 'Fully Automated',
+        title: "Fully Automated",
         description:
-          'State-of-the-art AI and automation technologies, taking the guesswork out of CBI and reducing the need for manual intervention.',
-        icon: 'tabler:automatic-gearbox',
+          "State-of-the-art AI and automation technologies, taking the guesswork out of CBI and reducing the need for manual intervention.",
+        icon: "tabler:automatic-gearbox",
       },
       {
-        title: 'Remotely Accessible',
-        description: 'Securely access the system from any device connected to the internet.',
-        icon: 'tabler:access-point',
+        title: "Remotely Accessible",
+        description:
+          "Securely access the system from any device connected to the internet.",
+        icon: "tabler:access-point",
       },
     ]}
   >
@@ -141,35 +148,38 @@ const metadata = {
     columns={3}
     items={[
       {
-        title: 'Blood Concentration Measurement',
-        description: 'Measures the concentration of blood in urine.',
-        icon: 'tabler:droplet-half-2-filled',
+        title: "Blood Concentration Measurement",
+        description: "Measures the concentration of blood in urine.",
+        icon: "tabler:droplet-half-2-filled",
       },
       {
-        title: 'Irrigation Rate Measurement',
-        description: 'Measures inflow and outflow rates, monitoring for any discrepancies.',
-        icon: 'tabler:ripple',
-      },
-      {
-        title: 'Irrigation Rate Control',
-        description: 'Manual mode for adjusting the inflow rate as needed.',
-        icon: 'tabler:adjustments',
-      },
-      {
-        title: 'Notification System',
-        description: 'Built-in notification system with lights, alarms, and SMS text alerts.',
-        icon: 'tabler:bell-ringing',
-      },
-      {
-        title: 'User-Friendly Interface',
+        title: "Irrigation Rate Measurement",
         description:
-          'Fully custom interface with touch controls, making it easy to use for both patients and healthcare providers.',
-        icon: 'tabler:hand-click',
+          "Measures inflow and outflow rates, monitoring for any discrepancies.",
+        icon: "tabler:ripple",
       },
       {
-        title: 'Automated Control',
-        description: 'Automatically adjusts irrigation rate based on blood concentration measurements.',
-        icon: 'tabler:settings',
+        title: "Irrigation Rate Control",
+        description: "Manual mode for adjusting the inflow rate as needed.",
+        icon: "tabler:adjustments",
+      },
+      {
+        title: "Notification System",
+        description:
+          "Built-in notification system with lights, alarms, and SMS text alerts.",
+        icon: "tabler:bell-ringing",
+      },
+      {
+        title: "User-Friendly Interface",
+        description:
+          "Fully custom interface with touch controls, making it easy to use for both patients and healthcare providers.",
+        icon: "tabler:hand-click",
+      },
+      {
+        title: "Automated Control",
+        description:
+          "Automatically adjusts irrigation rate based on blood concentration measurements.",
+        icon: "tabler:settings",
       },
     ]}
   />
@@ -179,39 +189,46 @@ const metadata = {
     columns={3}
     items={[
       {
-        icon: 'tabler:user',
-        title: 'Richard Chan',
+        icon: "tabler:user",
+        title: "Richard Chan",
       },
       {
-        icon: 'tabler:user',
-        title: 'Kevin Li',
+        icon: "tabler:user",
+        title: "Kevin Li",
       },
       {
-        icon: 'tabler:user',
-        title: 'Anushka Agrawal',
+        icon: "tabler:user",
+        title: "Anushka Agrawal",
       },
       {
-        icon: 'tabler:user',
-        title: 'Sahana Prasanna',
+        icon: "tabler:user",
+        title: "Sahana Prasanna",
       },
       {
-        icon: 'tabler:user',
-        title: 'Archit Chabbi',
+        icon: "tabler:user",
+        title: "Archit Chabbi",
       },
       {
-        icon: 'tabler:user',
-        title: 'Robert Heeter',
+        icon: "tabler:user",
+        title: "Robert Heeter",
       },
     ]}
     image={{
-      src: '~/assets/images/team.jpg',
-      alt: 'Team Photo',
-      loading: 'eager',
+      src: "~/assets/images/team.jpg",
+      alt: "Team Photo",
+      loading: "eager",
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About us</h2>
-      <p>We are a team of six passionate bioengineering students from Rice University in Houston, Texas.</p>
+      <h2
+        class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"
+      >
+        About us
+      </h2>
+      <p>
+        We are a team of six passionate bioengineering graduates from Rice
+        University in Houston, Texas.
+      </p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -285,11 +302,11 @@ const metadata = {
   <CallToAction
     actions={[
       {
-        variant: 'primary',
-        target: '_blank',
-        text: 'Email',
-        href: 'mailto:autoirrigationteam@gmail.com',
-        icon: 'tabler:mail',
+        variant: "primary",
+        target: "_blank",
+        text: "Email",
+        href: "mailto:autoirrigationteam@gmail.com",
+        icon: "tabler:mail",
       },
     ]}
   >
